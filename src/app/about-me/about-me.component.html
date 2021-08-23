@@ -1,9 +1,21 @@
 
-<img src= "assets/Hafiz94.jpg" alt="profilePic" height="300px" width="260px">
-<p>My name is {{Name}}</p>
-<table>
-    <tr><th>Skills</th></tr>
-    <tr><td>C# ASP.NET and .NET CORE</td></tr>
+<div>
+    <img src= "assets/Hafiz94.jpg" alt="profilePic" height="300px" width="260px">
+</div>
+<div>
+    <p>My name is {{Name}}</p>
+</div>
+
+<div>
+    <table>
+        <tr><th>Skills</th></tr>
+        <tr><td>C# ASP.NET and .NET CORE</td></tr> 
+    </table>
     
-    
-</table>
+</div>
+
+<div>
+    <button (click)="DisplayDate()">Display Date</button><br>
+<h1 id="DateDisplay" [style.display] = "DateHide ? 'block':'none'">{{DateDisplay}}</h1>
+</div>
+
